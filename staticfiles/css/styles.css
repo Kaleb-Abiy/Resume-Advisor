@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #121212;
+    --text-color-dark: #ffffff;
+}
+
+body {
+    transition: .7s;
+    font-family: "Reddit Mono", monospace;
+}
+
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+.intro {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.app-name {
+    text-align: center;
+}
+
+.description {
+ margin-top: 10px ;   
+}
+
+nav {
+    background-color: #6155B4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.file-handler {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.upload-btn{
+    background-color: #6155B4;
+    border: 5px solid #6155B4;
+    width: 50%;
+}
+
+.submit-btn {
+    background-color: #6155B4;
+    border: 3px solid #6155B4;
+    width: 100px;;
+    height: 30px;;
+    margin-left: 20px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.job-desc {
+    border: 2px solid #6155B4;;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.text-area {
+    width: 95.5%;
+    height: 74%;
+    padding: 15px;
+}
+
+
+.response-area {
+    border: 2px solid #6155B4;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}

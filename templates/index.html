@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Advisor</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Resume Advisor</h4>
+        </div>
+        <ul class="right-links">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </ul>
+    </nav>
+    <div class="intro">
+        <h1 class="app-name">Resume Advisor</h1>
+        <p class="description">Get your resume reviewed by AI and improve your chances of getting hired.</p>
+    </div>
+
+    <form action="{% url 'index' %}" method="post" enctype="multipart/form-data" id="uploadForm">
+    {% csrf_token %}
+
+    <div class="file-handler">
+        <label for="fileInput" class="file-label">
+            <span>Upload Resume</span>
+        </label>
+        <br>
+        <br>
+        <input class="upload-btn" type="file" name="file" id="fileInput" accept=".pdf">
+
+        <input class="submit-btn" type="submit" value="Analyze">
+      
+    </div>
+
+    <div class="job-desc">
+        <label for="job-desc">Job Description</label>
+        <textarea name="job-desc" class="text-area"></textarea>
+    </div>
+    </form>
+    <div id="processingMessage" style="display: none; width: 50%; margin: 0 auto; margin-top: 30px;">
+        <p>Processing, please wait...</p>
+    </div>
+
+    <div class="response-area">
+        <p id="responseMessage">{{ response }}</p>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
