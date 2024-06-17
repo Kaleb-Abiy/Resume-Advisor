@@ -13,7 +13,7 @@ pip install --upgrade pip
 pip install django
 
 
-pip install --user -U nltk
+pip install -U nltk
 
 
 pip install numpy==1.25
