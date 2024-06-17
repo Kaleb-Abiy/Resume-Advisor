@@ -16,7 +16,7 @@ pip install numpy==1.25
 
 pip install python-dotenv 
 
-pip install spacy
+pip install pyresparser
 
 # spaCy
 python -m spacy download en_core_web_sm
@@ -24,9 +24,6 @@ python -m spacy download en_core_web_sm
 # nltk
 python -m nltk.downloader words
 python -m nltk.downloader stopwords
-
-pip install pyresparser
-
 
 
 
