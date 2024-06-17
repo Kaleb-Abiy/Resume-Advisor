@@ -10,6 +10,8 @@ echo "BUILD START"
 
 pip install django
 
+pip install numpy --upgrade
+
 pip install pyresparser
 
 # spaCy
