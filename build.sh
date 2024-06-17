@@ -12,10 +12,12 @@ pip install --upgrade pip
 
 pip install django
 
+
+pip install --user -U nltk
+
+
 pip install numpy==1.25
 
-
-pip install nltk
 
 # nltk
 python -m nltk.downloader words
