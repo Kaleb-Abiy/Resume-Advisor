@@ -14,6 +14,8 @@ pip install django
 
 pip install numpy==1.25
 
+pip install dotenv
+
 pip install pyresparser
 
 # spaCy
