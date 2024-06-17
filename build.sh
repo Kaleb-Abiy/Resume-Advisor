@@ -10,21 +10,24 @@ echo "BUILD START"
 
 pip install --upgrade pip
 
-python -m spacy download en_core_web_sm
-
-# nltk
-python -m nltk.downloader words
-python -m nltk.downloader stopwords
-
 pip install django
 
 pip install numpy==1.25
 
 pip install python-dotenv 
 
-pip install pyresparser
+pip install spacy
 
 # spaCy
+python -m spacy download en_core_web_sm
+
+# nltk
+python -m nltk.downloader words
+python -m nltk.downloader stopwords
+
+pip install pyresparser
+
+
 
 
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
