@@ -13,6 +13,8 @@ pip install https://github.com/explosion/spacy-models/releases/download/en_core_
 # install all deps in the venv
 pip install -r requirements.txt
 
+pip install srsly==2.4.0 --no-cache-dir
+
 # spaCy
 python -m spacy download en_core_web_sm
 
