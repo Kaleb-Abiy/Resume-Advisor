@@ -29,6 +29,8 @@ pip install https://github.com/explosion/spacy-models/releases/download/en_core_
 
 pip install -q -U google-generativeai
 
+pip install -r requirements.txt
+
 
 
 python manage.py collectstatic --noinput
