@@ -12,7 +12,7 @@ pip install --upgrade pip
 
 pip install django
 
-pip install numpy==1.15.1
+pip install numpy==1.25
 
 pip install pyresparser
 
