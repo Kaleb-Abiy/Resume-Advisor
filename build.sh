@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 pip install srsly==2.4.0 --no-cache-dir
 
+pip install thinc --no-cache-dir
+
 # spaCy
 python -m spacy download en_core_web_sm
 
