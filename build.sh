@@ -4,6 +4,8 @@ set -o errexit
 
 echo "BUILD START"
 
+pip install nltk
+
 python -m nltk.downloader words
 python -m nltk.downloader stopwords
 
@@ -16,7 +18,7 @@ pip install --upgrade pip
 pip install django
 
 
-pip install nltk
+
 
 
 pip install numpy==1.25
