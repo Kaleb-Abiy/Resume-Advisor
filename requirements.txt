@@ -91,7 +91,7 @@ spacy==2.3.9
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 sqlparse==0.5.0
-srsly==1.0.7
+srsly==2.4.0
 thinc==7.4.6
 tqdm==4.66.4
 typer==0.12.3
