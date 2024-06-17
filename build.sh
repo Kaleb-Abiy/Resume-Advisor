@@ -10,7 +10,7 @@ echo "BUILD START"
 
 pip install django
 
-pip install --upgrade --no-binary numpy 
+pip install numpy==1.15.1
 
 pip install pyresparser
 
