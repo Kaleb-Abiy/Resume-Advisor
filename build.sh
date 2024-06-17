@@ -8,20 +8,9 @@ echo "BUILD START"
 
 # activate the virtual environment
 
-pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+pip install django
 
-pip install wheel
-
-pip install srsly==2.4.0 --no-cache-dir
-
-pip install thinc --no-cache-dir
-
-pip install blis==0.7.11 --no-cache-dir
-
-# install all deps in the venv
-pip install -r requirements.txt
-
-
+pip install pyresparser
 
 # spaCy
 python -m spacy download en_core_web_sm
@@ -31,7 +20,8 @@ python -m nltk.downloader words
 python -m nltk.downloader stopwords
 
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-# collect static files using the Python interpreter from venv
+
+
 python manage.py collectstatic --noinput
 
 echo "BUILD END"
