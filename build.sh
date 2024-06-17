@@ -13,19 +13,19 @@ pip install --upgrade pip
 pip install django
 
 
-pip install -U nltk
+pip install nltk
 
 
 pip install numpy==1.25
 
+
+pip install pyresparser
 
 # nltk
 python -m nltk.downloader words
 python -m nltk.downloader stopwords
 
 pip install python-dotenv 
-
-pip install pyresparser
 
 # spaCy
 python -m spacy download en_core_web_sm
