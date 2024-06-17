@@ -4,4 +4,4 @@ services:
     name: resume_advisor
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn resume_advisor.asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "python -m gunicorn resume_advisor.wsgi:application"
