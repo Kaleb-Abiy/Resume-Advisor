@@ -4,6 +4,9 @@ set -o errexit
 
 echo "BUILD START"
 
+python -m nltk.downloader words
+python -m nltk.downloader stopwords
+
 # create a virtual environment named 'venv' if it doesn't already exist
 
 # activate the virtual environment
@@ -22,8 +25,7 @@ pip install numpy==1.25
 pip install pyresparser
 
 # nltk
-python -m nltk.downloader words
-python -m nltk.downloader stopwords
+
 
 pip install python-dotenv 
 
