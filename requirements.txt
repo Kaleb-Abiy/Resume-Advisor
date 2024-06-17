@@ -6,6 +6,7 @@ asgiref==3.8.1
 async-timeout==4.0.3
 attrs==23.2.0
 blis==0.7.11
+Brotli==1.1.0
 cachetools==5.3.3
 catalogue==1.0.2
 certifi==2024.6.2
@@ -18,9 +19,9 @@ confection==0.1.5
 cryptography==42.0.8
 cymem==2.0.8
 distro==1.9.0
-Django==4.2.13
+Django==5.0.6
 docx2txt==0.8
-# en-core-web-sm==2.3.1
+en-core-web-sm==2.3.1
 exceptiongroup==1.2.1
 frozenlist==1.4.1
 google-ai-generativelanguage==0.6.4
@@ -32,6 +33,7 @@ google-generativeai==0.6.0
 googleapis-common-protos==1.63.1
 grpcio==1.64.1
 grpcio-status==1.62.2
+gunicorn==22.0.0
 h11==0.14.0
 httpcore==1.0.5
 httplib2==0.22.0
@@ -97,7 +99,9 @@ typing_extensions==4.12.1
 tzdata==2024.1
 uritemplate==4.1.1
 urllib3==2.2.1
+uvicorn==0.30.1
 wasabi==0.10.1
 weasel==0.4.1
+whitenoise==6.6.0
 wrapt==1.16.0
 yarl==1.9.4
