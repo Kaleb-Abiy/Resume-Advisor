@@ -8,6 +8,8 @@ echo "BUILD START"
 
 # activate the virtual environment
 
+pip install --upgrade pip
+
 pip install django
 
 pip install numpy==1.15.1
