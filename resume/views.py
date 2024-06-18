@@ -3,9 +3,9 @@ from django.http.response import JsonResponse
 import json
 import google.generativeai as genai
 from dotenv import load_dotenv
-# import nltk
-# nltk.download('stopwords')
-# nltk.download('words')
+import nltk
+nltk.download('stopwords')
+nltk.download('words')
 from pyresparser import ResumeParser
 from django.core.files.storage import FileSystemStorage
 import os
