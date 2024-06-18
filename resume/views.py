@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 import json
 import google.generativeai as genai
 from dotenv import load_dotenv
-from pyresparser import ResumeParser
+# from pyresparser import ResumeParser
 from django.core.files.storage import FileSystemStorage
 import os
 
