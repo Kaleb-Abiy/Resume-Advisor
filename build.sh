@@ -4,6 +4,8 @@ set -o errexit
 
 echo "BUILD START"
 
+pip install numpy==1.25
+
 pip install -r requirements.txt
 
 python -m nltk.downloader words
@@ -16,8 +18,6 @@ pip install https://github.com/explosion/spacy-models/releases/download/en_core_
 
 
 # pip install django
-
-pip install numpy==1.25
 # pip install pyresparser
 
 # nltk
