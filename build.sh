@@ -4,28 +4,21 @@ set -o errexit
 
 echo "BUILD START"
 
-pip install numpy==1.25
+pip install django
 
-pip install -r requirements.txt
+pip install 'whitenoise[brotli]'
 
-python -m nltk.downloader words
-python -m nltk.downloader stopwords
+pip install python-dotenv
 
-# spaCy
-python -m spacy download en_core_web_sm
-
-pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-
-
-# pip install django
-# pip install pyresparser
-
-# nltk
-
-
-pip install python-dotenv 
+pip install gunicorn uvicorn
 
 pip install -q -U google-generativeai
+
+pip install pyresparser
+
+pip install numpy==1.25
+
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 
 
 python manage.py collectstatic --noinput
