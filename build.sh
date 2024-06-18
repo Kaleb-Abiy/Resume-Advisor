@@ -21,8 +21,10 @@ pip install numpy==1.25
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 
 # nltk
-python -m nltk.downloader words
-python -m nltk.downloader stopwords
+
+cp -r nltk_data /opt/render/
+# python -m nltk.downloader words
+# python -m nltk.downloader stopwords
 
 python manage.py collectstatic --noinput
 
